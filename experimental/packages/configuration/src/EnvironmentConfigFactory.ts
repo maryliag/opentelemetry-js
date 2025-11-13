@@ -286,7 +286,7 @@ export function setMeterProvider(config: ConfigurationModel): void {
     if (readerPeriodic.exporter.otlp_http == null) {
       readerPeriodic.exporter.otlp_http = {};
     }
-
+    // lala 
     const endpoint =
       getStringFromEnv('OTEL_EXPORTER_OTLP_METRICS_ENDPOINT') ??
       (getStringFromEnv('OTEL_EXPORTER_OTLP_ENDPOINT')
