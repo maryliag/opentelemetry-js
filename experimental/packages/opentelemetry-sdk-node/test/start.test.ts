@@ -70,6 +70,7 @@ describe('startNodeSDK', function () {
     propagation.disable();
     metrics.disable();
     logs.disable();
+    console.log('');
 
     setGlobalLoggerProviderSpy = Sinon.spy(logs, 'setGlobalLoggerProvider');
     setGlobalMeterProviderSpy = Sinon.spy(metrics, 'setGlobalMeterProvider');
